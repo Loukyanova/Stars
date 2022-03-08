@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating_Stars</title>
+</head>
+
+<body>
+    <style>
+        .star {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: start;
+            align-items: start;
+        }
+
+        .str {
+            display: inline-block;
+            background-image: url(star0.png);
+            width: 73px;
+            height: 78px;
+        }
+
+        .str:hover,
+        .str:hover~.str:nth-child(-n+2),
+        .str:hover~.str:nth-child(-n+3),
+        .str:hover~.str:nth-child(-n+4),
+        .str:hover~.str:nth-child(-n+5) {
+            background-image: url(star1.png);
+            width: 73px;
+            height: 78px;
+        }
+    </style>
+
+    <div class="star">
+        <div class="str"></div>
+        <div class="str"></div>
+        <div class="str"></div>
+        <div class="str"></div>
+        <div class="str"></div>
+    </div>
+</body>
+</html>
